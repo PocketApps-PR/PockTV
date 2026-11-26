@@ -2,7 +2,7 @@
 
 **Español** · [English](#english)
 
-App de IPTV con interfaz propia para **Miyoo Flip V2** con **SpruceOS** (pantalla 640×480). Reproduces tu propia lista M3U con TV en vivo, películas y series, desde el control de la consola.
+Reproductor de video con interfaz propia para **Miyoo Flip V2** con **SpruceOS** (pantalla 640×480). Reproduces tu propia lista M3U con TV en vivo, películas y series, desde el control de la consola.
 
 ![Inicio](01_inicio.png) ![TV en vivo](02_tv_en_vivo.png)
 ![Ajustes](03_ajustes.png) ![Acerca de](04_acerca_de.png)
@@ -20,7 +20,7 @@ App de IPTV con interfaz propia para **Miyoo Flip V2** con **SpruceOS** (pantall
 
 ## Importante
 
-**PockTV no incluye canales, listas ni contenido de ningún tipo.** Cada persona usa su propia lista M3U, de una fuente que tenga derecho a usar (canales gratuitos oficiales, TV pública o un servicio IPTV contratado por ti).
+**PockTV no incluye canales, listas ni contenido de ningún tipo.** Cada persona usa su propia lista M3U, de una fuente que tenga derecho a usar (canales gratuitos oficiales, TV pública o un servicio de streaming que tengas contratado).
 
 ## Instalación
 
@@ -60,7 +60,7 @@ PockTV es gratis. Si te gusta, puedes apoyar su desarrollo con una donación vol
 <a name="english"></a>
 # PockTV (English)
 
-IPTV app with its own interface for the **Miyoo Flip V2** running **SpruceOS** (640×480 screen). Play your own M3U playlist: live TV, movies and series, all from the console's controls.
+Media player with its own interface for the **Miyoo Flip V2** running **SpruceOS** (640×480 screen). Play your own M3U playlist: live TV, movies and series, all from the console's controls.
 
 ## Features
 
@@ -73,7 +73,7 @@ IPTV app with its own interface for the **Miyoo Flip V2** running **SpruceOS** (
 
 ## Important
 
-**PockTV does not include any channels, playlists or content.** Everyone uses their own M3U playlist, from a source they are entitled to use (official free channels, public TV, or an IPTV service you subscribe to).
+**PockTV does not include any channels, playlists or content.** Everyone uses their own M3U playlist, from a source they are entitled to use (official free channels, public TV, or a streaming service you subscribe to).
 
 ## Install
 
