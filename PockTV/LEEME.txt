@@ -1,0 +1,98 @@
+PockTV para Miyoo Flip V2 + SpruceOS     (hecho por PocketApps)
+
+QUE ES
+  Un reproductor de video con interfaz propia: TV en vivo, Peliculas, Series y Favoritos,
+  con listas por categoria, buscador y reproductor interno. Usa el Python con PySDL2 que
+  trae SpruceOS, no hay que compilar nada.
+  PockTV NO incluye canales, listas ni contenido. Usa tu propia lista M3U, de una fuente
+  que tengas derecho a usar.
+
+INSTALAR
+  1. Copia la carpeta PockTV a  /mnt/SDCARD/App/  (queda App/PockTV/).
+  2. Pon tu lista dentro de la carpeta PockTV:
+       - un archivo  lista.m3u   o
+       - un archivo  lista.url   con UNA sola linea: la direccion de tu lista.
+  3. En la consola: Apps -> PockTV.
+  Mas listas: ponlas en  PockTV/listas/  (.m3u, .m3u8 o .url) y elige entre ellas con el
+  icono "Cambiar de Lista". Mira listas/00_INSTRUCCIONES.txt.
+
+ACTUALIZAR
+  Ajustes -> Acerca de -> Buscar actualizaciones. Si hay version nueva, la app te pregunta
+  antes de instalar; tus listas, ajustes y favoritos no se tocan. Un punto rojo parpadeante
+  en "Acerca de" avisa que hay una version nueva. Al terminar, cierra y abre PockTV.
+
+CONTROLES
+  D-pad: moverte      A: entrar / reproducir      B: atras / salir
+  X: marcar / quitar favorito (estrella)           Y: buscar por nombre
+  L1 / R1: saltar a la letra anterior / siguiente (las listas van en orden alfabetico)
+  L2 / R2 (o izquierda / derecha): pagina anterior / siguiente. Se repite al mantener.
+  Boton MENU de la consola: vuelve al inicio de la app desde cualquier pantalla.
+  Si no responde, en ui.conf cambia BTN_HOME (por defecto 5, "guide").
+  TECLADO: A escribe, B borra, Start (o Y) busca. La flecha de mayusculas: 1 toque = una
+  mayuscula, 2 = fijas, 3 = apagar. ?123 = simbolos.
+
+INICIO
+  Cuatro mosaicos: TV en vivo / Peliculas / Series / Favoritos.
+  Arriba al centro, la lupa: BUSQUEDA MAESTRA (busca en TV, Peliculas y Series a la vez).
+  Arriba a la derecha: hora y fecha, y el icono de wifi (3 rayitas = fuerte, gris = sin wifi).
+  Abajo a la derecha, tres iconos:
+    Actualizar Listas - vuelve a descargar las listas .url y recarga la activa
+    Cambiar de Lista  - elige entre las listas de la carpeta listas/
+    Ajustes           - ver abajo
+
+AJUSTES
+  Idioma de Interfaz: Espanol, English, Portugues, Frances, Aleman.
+  Reloj y Fecha: formato 12 / 24 horas.
+  Video: modo de pantalla (Normal / Pantalla completa / Zoom). Mientras ves algo, el menu
+    solo cambia esa reproduccion.
+  Audio: TV en vivo -> Idioma de Canales (filtra la lista) e "Incluir canales sin idioma
+    identificado". Peliculas / Series -> hasta 4 idiomas en orden de prioridad.
+    "Todos" = no cambiar la pista.
+  Subtitulos: Peliculas / Series -> hasta 3 idiomas en orden de prioridad.
+    "Sin subtitulos" = no mostrar subtitulos.
+  Apariencia: efecto de las tarjetas, logo y mas.
+  Sonido: sonidos de la interfaz.
+  Acerca de: version, buscar actualizaciones y apoyar el proyecto (codigo QR de Ko-fi).
+  Idioma de Canales: las listas M3U no traen un campo oficial de idioma, asi que se deduce
+  de tvg-language, etiquetas (ES|, [EN]), pais y palabras del nombre. Todo se guarda en
+  ajustes.json.
+
+MIENTRAS VES UN CANAL / PELICULA / SERIE
+  Arriba / Abajo (TV en vivo): canal anterior / siguiente, en el orden de la lista donde
+    estabas (incluida una busqueda o Favoritos). Si el siguiente no transmite, salta solo
+    al proximo que si transmita.
+  A (o Start / Select): pantalla de pausa, con Pantalla, Audio, Subtitulos, Favorito y, en
+    series, Episodios. Lo que elijas vale solo para esa reproduccion.
+    Si la imagen todavia esta en negro (cargando), los botones se ignoran hasta que aparece.
+  Izquierda / Derecha (peliculas y series): atrasar / adelantar 10 s.
+  L1 / R1: 1 minuto.   L2 / R2: 5 minutos.
+    Manteniendo pulsado se repite solo y acelera. Aparece la barra de progreso; a los ~2 s
+    (o con A) reanuda en ese punto. B cancela y vuelve donde estabas.
+  B: volver a la lista.
+  En canales en vivo Izquierda / Derecha no hacen nada (no se puede adelantar).
+
+BUSCADOR (en TV en vivo, Peliculas, Series y Favoritos)
+  Y abre el teclado. D-pad para moverte, A escribe la letra, B borra, Y (o la tecla
+  "Buscar") aplica. Busca por nombre sin importar mayusculas ni acentos; si escribes varias
+  palabras, el nombre debe tener todas. Con una busqueda activa, B la quita y otra vez B
+  vuelve al inicio.
+
+FAVORITOS
+  X sobre un canal, pelicula o serie le pone una estrella. El mosaico "Favoritos" junta todo
+  lo marcado. Se guardan en PockTV/favoritos.json (se conservan al actualizar la lista
+  mientras el nombre no cambie).
+
+LISTAS CON https
+  Si tu lista usa direcciones https, PockTV las reproduce con un puente interno; no tienes
+  que configurar nada.
+
+SI ALGO FALLA, envia el texto de estos archivos (en la carpeta PockTV)
+  launch.log   que Python encontro (o que no encontro PySDL2)
+  iptv_ui.log  botones que presionas, errores, pantalla, actualizaciones
+  ffplay.log   lo que dijo el reproductor al abrir una entrada
+  Si algun boton (A/B/X/Y) no responde como dice arriba, mira iptv_ui.log ("boton N") y
+  cambia BTN_OK / BTN_BACK / BTN_FAV / BTN_SEARCH en ui.conf.
+
+APOYAR
+  PockTV es gratis. Si te gusta, puedes apoyarlo con una donacion voluntaria:
+  https://ko-fi.com/pocketapps_

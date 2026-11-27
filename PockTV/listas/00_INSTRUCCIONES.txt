@@ -1,0 +1,12 @@
+CARPETA DE LISTAS ADICIONALES
+
+Pon aqui tus otras listas y luego elige entre ellas con el icono "Cambiar de Lista".
+(La lista principal sigue siendo lista.url o lista.m3u en la carpeta PockTV.)
+
+Formatos:
+  - Archivo de lista:   MiLista.m3u  o  MiLista.m3u8
+  - Direccion (enlace): MiLista.url  (o .txt) con UNA sola linea: la direccion http...
+    La app la descarga sola y la guarda en esta carpeta (.cache).
+
+El nombre del archivo es el nombre que veras en la pantalla "Cambiar de Lista".
+Despues de agregar o cambiar archivos, entra a "Cambiar de Lista" o usa "Actualizar Listas".

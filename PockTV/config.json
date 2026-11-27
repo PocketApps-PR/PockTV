@@ -1,0 +1,7 @@
+{
+    "label": "PockTV",
+    "icon": "App/PockTV/icon.png",
+    "iconsel": "App/PockTV/icon.png",
+    "launch": "launch.sh",
+    "description": "TV en vivo, Películas y Series desde tu lista M3U"
+}
